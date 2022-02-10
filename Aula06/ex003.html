@@ -26,8 +26,11 @@
         // (string + string = a concatenação)
         // O comando window.prompt retorna uma string
 
-        var n1 = Number.parseInt(window.prompt('Digite um número: ')) //Adicionando Number.parseInt antes do prompt convertemos o tipo de dado do prompt de string para número inteiro.
-        var n2 = Number.parseInt(window.prompt('Digite outro número: '))//Adicionando Number.parseInt antes do prompt convertemos o tipo de dado do prompt de string para número inteiro.
+        // Usando o "Number" o propio JS decide qual tipo de Number ele é, se eu quiser alguem tipo especifico eu devo usar 
+        // Number.parseInt para inteiros ou Number.parseFloat para reais.
+ 
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
         var soma = n1 + n2
         window.alert('A soma dos valores é '+soma)
 
