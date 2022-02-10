@@ -23,6 +23,15 @@
         //".toUpperCase" passa a variavel pra letras maiúsculas
         document.write(`Seu nome em minúsculas é <strong>${nome.toLowerCase()}</strong>!<br/>`)
         //".toLowerCase" passa a variavel pra letras minúsculas
+
+        var sal = 1500.5
+        
+        sal.toFixed(2) //corrigindo as casas decimais
+
+        //sal.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'}) mudando a localização pra Real do brasil
+
+        document.write(`Seu salario é <strong>${sal.toLocaleString('pt-BR',{style:'currency', currency: 'BRL'})}</strong> Reais!<br/>`)
+
     </script>
 </body>
 </html>
