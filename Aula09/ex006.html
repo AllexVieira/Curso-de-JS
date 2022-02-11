@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background: rgb(49, 48, 48);
+            color: white;
+            font: normal 18pt arial;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <p><div>Clique em mim</div></p>
+    <script>
+        document.write('Ola mundo!<br>');
+        document.writeln(document.charset); //O writeln coloca um pequeno espaço no fim do que é exibido.
+        document.writeln(document.URL);
+    </script>
 </body>
 </html>
