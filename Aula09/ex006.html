@@ -26,11 +26,10 @@
 
         var p1 = document.getElementsByTagName('p')[0];//getElementsByTagName seleciona a tag e [] seleciona qual dentro da tag 0 é a primeira
         document.write('Está escrito assim: ' + p1.innerText + '<br><br>');// so seleciona a tag não basta, é preciso ou nao mostrar o seu conteudo .innerText, .innerHtml mostra toda a formataçao do texto, tmb é posivel usar outros comandos.
-
-        //p1.style.color = 'blue';
+        p1.style.color = 'blue';//muda a cor da fonte do p1 para azul.
 
         var msg = document.getElementById('msg');
-        msg.style.background = 'green';
+        msg.style.background = 'green';//muda a cor do fundo da div de id=msg para verde
         
     </script>
 </body>
