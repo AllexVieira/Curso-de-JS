@@ -17,11 +17,21 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-    <p><div>Clique em mim</div></p>
+    <p><div id="msg">Clique em mim !</div><br></p>
+    
     <script>
-        document.write('Ola mundo!<br>');
-        document.writeln(document.charset); //O writeln coloca um pequeno espaço no fim do que é exibido.
-        document.writeln(document.URL);
+        document.write('Olá mundo !!!<br><br>');
+        document.writeln(document.charset+'<br><br>'); //O writeln coloca um pequeno espaço no fim do que é exibido.
+        document.write(document.URL+'<br><br>');
+
+        var p1 = document.getElementsByTagName('p')[0];//getElementsByTagName seleciona a tag e [] seleciona qual dentro da tag 0 é a primeira
+        document.write('Está escrito assim: ' + p1.innerText + '<br><br>');// so seleciona a tag não basta, é preciso ou nao mostrar o seu conteudo .innerText, .innerHtml mostra toda a formataçao do texto, tmb é posivel usar outros comandos.
+
+        //p1.style.color = 'blue';
+
+        var msg = document.getElementById('msg');
+        msg.style.background = 'green';
+        
     </script>
 </body>
 </html>
