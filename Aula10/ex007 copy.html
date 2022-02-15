@@ -21,13 +21,21 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         Interaja...
     </div>
     <script>
-        function clicar(params) {
-            var a = document.getElementById('area')
+        var a = document.getElementById('area')
+        //não é recomendado usar var no corpo do script, problema de scopo, problemas com uso de memoria. Com a variavel fora da funçao e dentro do scrip ela pode ser usada por todas as funçoes dentro daquele script, se ela estiver dentro da funçao somente aquela funçao pode usar/ter acesso a aquela variavel.
+
+        function clicar() {
             a.innerText = 'Clicou!'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
         }
     </script>
 </body>
