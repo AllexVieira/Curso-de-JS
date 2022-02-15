@@ -16,17 +16,23 @@
             text-align: center;
         }
         body{
-            background-color: black;
+            background-color: rgb(92, 91, 91);
         }
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+    <!-- <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> deixando o HTML mais limpo removendo os eventos de mouse da div para o script-->
+
+        <div id="area">
         Interaja...
     </div>
     <script>
+
         var a = document.getElementById('area')
         //não é recomendado usar var no corpo do script, problema de scopo, problemas com uso de memoria. Com a variavel fora da funçao e dentro do scrip ela pode ser usada por todas as funçoes dentro daquele script, se ela estiver dentro da funçao somente aquela funçao pode usar/ter acesso a aquela variavel.
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
 
         function clicar() {
             a.innerText = 'Clicou!'
