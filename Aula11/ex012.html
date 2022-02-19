@@ -19,7 +19,7 @@
             var res = document.querySelector('div#res')
             var país = txtp.value
             res.innerHTML = `<p>O seu Paìs é <strong>${país}</strong> !</p>`
-            if (país == 'Brasil') {
+            if (país.toLowerCase() == 'brasil') {
                 res.innerHTML += `Parabéns você é Brasileiro !!!`
             }else{
                 res.innerHTML += `Que pena você não é Brasileiro !!!`
