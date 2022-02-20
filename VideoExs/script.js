@@ -8,8 +8,9 @@ function carregar() {
     msg.innerHTML = `A hora agora é <strong>${hora}:${min}:${sec}</strong>`
     if (hora >= 6 && hora <= 12) {
         
-    } else if {
+    } else if() {
         
-    } else if {
+    } else {
 
     }
+}
