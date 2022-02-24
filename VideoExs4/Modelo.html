@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de exercício</title>
+    <title>Vamos Contar</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Vamos Contar !!!</h1>
     </header>
     <section>
+
         <div>
-            Testando
+            
+                Digite um número de inicio e outro para o fim e escolha de quanto em quanto vamos avançar!
+            </p>
+
+            <p id="in">
+                Início: <input type="number" name="inicio" id="txtini">
+            </p>
+
+            <p id="fi">
+                Fim:    <input type="number" name="fim" id="txtfim">
+            </p>
+
+            <p id="pa">
+                Passo:  <input type="number" name="passo" id="txtpas">
+            </p>
+
+            <p>
+                <input type="button" value="Contar" onclick="contar()">
+            </p>
+
         </div>
-        <div>
-            Olá!
+
+        <div id="res">
+            Preparando a contagem...
         </div>
+
     </section>
     <footer>
         <p>Curso em Video</p>
